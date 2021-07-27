@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import reportWebVitals from './reportWebVitals';
 import App from './App'
 import { ApolloProvider } from '@apollo/react-hooks'
-import client from './components/ApolloProvider';
+import client from './components/Apolloprovider';
 
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
