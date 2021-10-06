@@ -3,10 +3,11 @@ import ApolloClient from 'apollo-client'
 import { InMemoryCache } from 'apollo-cache-inmemory'
 import{ createHttpLink } from 'apollo-link-http'
 import { setContext } from 'apollo-link-context';
-
+import dotenv from 'dotenv';
+dotenv.config()
 
 const httpLink = createHttpLink({
-    uri: 'https://sleepy-bastion-08152.herokuapp.com/'
+    uri: process.env.HOST_URL
 });
 
 const authLink = setContext(() => {
