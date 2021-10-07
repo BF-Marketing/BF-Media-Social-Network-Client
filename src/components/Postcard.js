@@ -15,7 +15,6 @@ function Postcard({ user, postindex, post: { body, createdAt, imageLink, id, use
                 <div className='d-flex align-items-center'>
                     <img src={userImageLink} width='50px' height='70px' className="poster_image" alt="..." />
                     <h5 className="card-title ms-3 fw-bold">{username}</h5>
-                    {/* <p className='ms-3 my-0 fw-bold'>{comment.username}</p> */}                                            
                 </div>
                 <p className="card-text">{body}</p>
                 <small className="card-text">{moment(createdAt).fromNow()}</small>
